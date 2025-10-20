@@ -1,0 +1,519 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+header {
+    background-color: #00072D;
+    color: #ffffff;
+    padding: 1rem 0;
+    text-align: center;
+    width: 100vw;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.headshot {
+    vertical-align: top;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    border: 1rem solid #ADD8E6;
+    background-color: #ADD8E6;
+    background-image: url('Media/Headshot.JPG');
+    background-size: cover;
+    background-position: center;
+    background-clip: padding-box;
+    float: right;
+    margin: 1rem;
+}
+
+#about {
+    min-height: 250px;
+    padding-bottom: 9rem;
+    background-color: #fff;
+    width: 100vw;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.skills {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.collumn {
+    flex: 1 1 150px;
+    max-width: 250px;
+    min-width: 120px;
+}
+.collumn h3 {
+    font-size: 1.5rem;
+}
+.collumn li {
+    background-color: #fff;
+    padding: 0.8rem;
+    margin: 0.6rem 0;
+    border-radius: 25% 10%;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    max-width: 180px;
+    font-weight: bold;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    font-size: 0.9rem;
+}
+.collumn li img {
+    display: block;
+    margin: 0 auto 1rem;
+    width: 50px;
+    height: 50px;
+    object-fit: contain;
+    border-radius: 10%;
+}
+.collumn li p {
+    text-align: center;
+    font-weight: normal;
+    padding: 0.5rem;
+    margin: 0.5rem 0;
+}
+
+#featured-projects {
+    background-color: black; 
+    color: white; 
+    padding: 20px;
+    text-align: center;
+}
+
+#projects {
+    background-color: darkgray; 
+    color: white; 
+    padding: 20px;
+    text-align: center;
+}
+
+.Fprojects {
+    display: flex; 
+    justify-content: center; 
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.Fproject{
+    background-color: #333; 
+    padding: 20px; 
+    margin: 10px; 
+    border-radius: 10px; 
+    box-sizing: border-box;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex: 1 1 300px;
+    max-width: 400px;
+    min-height: 500px;
+    display: flex;
+    flex-direction: column;
+}
+
+.Fproject p {
+    padding: 10px 0;
+    background-color: #e0e0e0;
+    color: #222;
+    border-radius: 6px;
+}
+
+.Fproject img {
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+.Fproject iframe {
+    width: 100%;
+    height: 200px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+.button {
+    color: white; 
+    text-decoration: none; 
+    background-color: #555; 
+    padding: 10px 20px; 
+    border-radius: 5px;
+}
+
+h2 {
+    color: #00072D;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 1rem;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+/* Hamburger Menu Styles */
+.hamburger {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+    padding: 0.5rem;
+    background: none;
+    border: none;
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    z-index: 1000;
+}
+
+.hamburger span {
+    width: 25px;
+    height: 3px;
+    background-color: #fff;
+    margin: 3px 0;
+    transition: 0.3s;
+    border-radius: 2px;
+}
+
+.hamburger.active span:nth-child(1) {
+    transform: rotate(-45deg) translate(-5px, 6px);
+}
+
+.hamburger.active span:nth-child(2) {
+    opacity: 0;
+}
+
+.hamburger.active span:nth-child(3) {
+    transform: rotate(45deg) translate(-5px, -6px);
+}
+
+.nav-menu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav-menu.active {
+    display: flex;
+}
+
+section {
+    padding: 2rem;
+    margin: 1rem 0;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+ul {
+    list-style-position: outside;
+    padding: 0;
+    text-align: center;
+}
+
+ul li {
+    display: grid;
+    width: 100%;
+}
+
+.project {
+    margin-bottom: 1rem;
+    text-align: center;
+}
+
+.video-container {
+    position: relative;
+    padding-bottom: 56.25%; /* 16:9 aspect ratio */
+    height: 0;
+    overflow: hidden;
+    max-width: 100%;
+    background: #000;
+}
+
+.video-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.contact-buttons {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 1rem;
+}
+
+.button img {
+    width: 40px;
+    height: 40px;
+    object-fit: cover;
+    border-radius: 4px;
+    transition: transform 0.3s;
+}
+
+.button img:hover {
+    transform: scale(1.1);
+}
+
+#contact {
+    text-align: center;
+}
+
+footer {
+    text-align: center;
+    padding: 1rem 0;
+    background-color: #333;
+    color: #ffffff;
+}
+
+details {
+    background-color: #a0a0a0;
+    padding: 5px;
+    border-radius: 5px;
+    text-align: left;
+    color: white;
+    outline: none
+}
+
+.youtube-embed-container {
+    position: relative;
+    width: 100%;
+    padding-bottom: 51%;
+    height: 0;
+    overflow: hidden;
+}
+
+.youtube-embed-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 1366px) {
+    .collumn {
+        flex: 1 1 200px;
+        max-width: 300px;
+        min-width: 150px;
+    }
+    
+    .Fproject {
+        flex: 1 1 280px;
+        max-width: 350px;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .collumn {
+        flex: 1 1 250px;
+        max-width: 400px;
+    }
+    
+    .Fproject {
+        flex: 1 1 300px;
+        max-width: 400px;
+    }
+    
+    .skills {
+        justify-content: center;
+    }
+    
+    .Fprojects {
+        justify-content: center;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .collumn {
+        flex: 1 1 100%;
+        max-width: 100%;
+    }
+    
+    .Fproject {
+        flex: 1 1 100%;
+        max-width: 100%;
+    }
+    
+    .headshot {
+        float: none;
+        display: block;
+        margin: 1rem auto;
+        width: 150px;
+        height: 150px;
+    }
+    
+    #about {
+        padding: 1rem;
+    }
+    
+    section {
+        padding: 1rem;
+    }
+    
+    .contact-buttons {
+        flex-wrap: wrap;
+        gap: 1rem;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    header {
+        padding: 0.5rem 0;
+        position: relative;
+    }
+    
+    header h1 {
+        font-size: 1.5rem;
+        margin: 0.5rem 0;
+    }
+    
+    .hamburger {
+        display: flex;
+    }
+    
+    nav {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        background-color: #00072D;
+        border-top: 1px solid rgba(255,255,255,0.2);
+        z-index: 999;
+    }
+    
+    .nav-menu {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        padding: 0;
+        margin: 0;
+    }
+    
+    .nav-menu.active {
+        display: flex;
+    }
+    
+    nav ul {
+        flex-direction: column;
+        width: 100%;
+        padding: 0;
+        margin: 0;
+    }
+    
+    nav ul li {
+        display: block;
+        margin: 0;
+        width: 100%;
+        border-bottom: 1px solid rgba(255,255,255,0.1);
+    }
+    
+    nav ul li:last-child {
+        border-bottom: none;
+    }
+    
+    nav ul li a {
+        display: block;
+        padding: 1rem;
+        background-color: transparent;
+        border-radius: 0;
+        margin: 0;
+        width: 100%;
+        text-align: center;
+        transition: background-color 0.3s;
+    }
+    
+    nav ul li a:hover {
+        background-color: rgba(255,255,255,0.1);
+    }
+    
+    .headshot {
+        width: 120px;
+        height: 120px;
+        border: 0.5rem solid #ADD8E6;
+    }
+    
+    #about {
+        padding: 0.5rem;
+        text-align: center;
+    }
+    
+    section {
+        padding: 0.5rem;
+        margin: 0.5rem 0;
+    }
+    
+    .collumn {
+        margin-bottom: 1rem;
+    }
+    
+    .collumn h3 {
+        font-size: 1.2rem;
+        text-align: center;
+    }
+    
+    .collumn li {
+        max-width: 100%;
+        margin: 0.5rem auto;
+        font-size: 0.8rem;
+    }
+    
+    .collumn li img {
+        width: 40px;
+        height: 40px;
+    }
+    
+    .Fproject {
+        margin: 0.5rem 0;
+        padding: 1rem;
+        min-height: auto;
+    }
+    
+    .Fproject h3 {
+        font-size: 1.1rem;
+    }
+    
+    .Fproject iframe {
+        height: 180px;
+    }
+    
+    .contact-buttons {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .button {
+        padding: 1rem 2rem;
+        margin: 0.5rem 0;
+        display: block;
+        text-align: center;
+        min-width: 200px;
+    }
+    
+    footer {
+        padding: 1rem;
+        font-size: 0.9rem;
+    }
+}
