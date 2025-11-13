@@ -1,12 +1,17 @@
+@font-face {
+ font-family: bubbleboddyneue-regular;
+ src: url("bubblebodyneue-regular trial.ttf");
+}
+
 body {
-    font-family: Arial, sans-serif;
+    font-family: bubbleboddyneue-regular;
     margin: 0;
     padding: 0;
     background-color: #f4f4f4;
 }
 
 header {
-    background-color: #00072D;
+    background-color: #640000;
     color: #ffffff;
     padding: 1rem 0;
     text-align: center;
@@ -20,7 +25,7 @@ header {
     width: 200px;
     height: 200px;
     border-radius: 50%;
-    border: 1rem solid #ADD8E6;
+    border: 1rem solid #8b0000;
     background-color: #ADD8E6;
     background-image: url('Media/Headshot.JPG');
     background-size: cover;
