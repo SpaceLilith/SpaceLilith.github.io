@@ -1,10 +1,12 @@
 @font-face {
- font-family: bubbleboddyneue-regular;
- src: url("bubblebodyneue-regular trial.ttf");
+  font-family: 'Garet-Book';
+  src: url('Garet-book.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
 }
 
 body {
-    font-family: bubbleboddyneue-regular;
+    font-family: 'Garet-Book';
     margin: 0;
     padding: 0;
     background-color: #f4f4f4;
@@ -32,12 +34,15 @@ header {
     background-position: center;
     background-clip: padding-box;
     float: right;
-    margin: 1rem;
+    margin: 15px 2.5% 15px 1.5in;
 }
 
 #about {
     min-height: 250px;
-    padding-bottom: 9rem;
+    padding-left: 15%;
+    padding-right: 15%;
+    padding-bottom: 4%;
+    padding-top: 4%;
     background-color: #fff;
     width: 100vw;
     margin: 0;
@@ -108,7 +113,7 @@ header {
 }
 
 .Fproject{
-    background-color: #333; 
+    background-color: #f8f8f8; 
     padding: 20px; 
     margin: 10px; 
     border-radius: 10px; 
@@ -123,9 +128,13 @@ header {
     flex-direction: column;
 }
 
+.Fproject h3 {
+    color: #000000;
+    font-size: x-large;
+}
+
 .Fproject p {
     padding: 10px 0;
-    background-color: #e0e0e0;
     color: #222;
     border-radius: 6px;
 }
@@ -145,16 +154,13 @@ header {
     margin-bottom: 10px;
 }
 
-.button {
-    color: white; 
-    text-decoration: none; 
-    background-color: #555; 
-    padding: 10px 20px; 
-    border-radius: 5px;
+.Fproject:hover {
+    background-color: #dbdbdb;
 }
 
+
 h2 {
-    color: #00072D;
+    color: #640000;
 }
 
 nav ul {
@@ -170,6 +176,8 @@ nav ul li {
 nav ul li a {
     color: #fff;
     text-decoration: none;
+    font-weight: bold;
+    font-size: 20px;
 }
 
 /* Hamburger Menu Styles */
@@ -269,18 +277,6 @@ ul li {
     margin-top: 1rem;
 }
 
-.button img {
-    width: 40px;
-    height: 40px;
-    object-fit: cover;
-    border-radius: 4px;
-    transition: transform 0.3s;
-}
-
-.button img:hover {
-    transform: scale(1.1);
-}
-
 #contact {
     text-align: center;
 }
@@ -315,6 +311,31 @@ details {
     left: 0;
     width: 100%;
     height: 100%;
+}
+
+.contact-info ul {
+    align-items: center;
+    justify-content: center;
+    text-align: left;
+}
+
+.contact-info ul li {
+    display: flex;
+    align-items: center;
+    list-style-type: none;
+    margin-bottom: 10px;
+}
+
+.contact-info ul li p {
+    display: inline;
+    margin-left: 5%;
+    width: 3.5in;
+    text-align: left;
+}
+
+.Assets ul li ul{
+    display: inline-block;
+    align-items: center;
 }
 
 /* Responsive Design */
@@ -507,14 +528,6 @@ details {
     .contact-buttons {
         flex-direction: column;
         align-items: center;
-    }
-    
-    .button {
-        padding: 1rem 2rem;
-        margin: 0.5rem 0;
-        display: block;
-        text-align: center;
-        min-width: 200px;
     }
     
     footer {
