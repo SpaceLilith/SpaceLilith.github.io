@@ -1,8 +1,8 @@
 @font-face {
   font-family: 'Garet-Book';
-  src: url('Garet-Book.ttf') format('truetype'),
-    url('Garet-Book.woff') format('woff'),
-    url('Garet-Book.woff2') format('woff2');
+  src: url('Garet-book.ttf') format('truetype'),
+    url('Garet-book.woff') format('woff'),
+    url('Garet-book.woff2') format('woff2');
   font-weight: normal;
   font-style: normal;
 }
