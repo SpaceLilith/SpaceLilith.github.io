@@ -24,6 +24,10 @@ header {
     box-sizing: border-box;
 }
 
+header h2 {
+    color: #dbdbdb;
+}
+
 .headshot {
     vertical-align: top;
     width: 200px;
@@ -150,7 +154,7 @@ header {
 }
 
 ul img{
-    height: 550px;
+    width: 1800px;
 }
 
 .Fproject iframe {
@@ -342,6 +346,12 @@ details {
 .Assets ul li ul{
     display: inline-block;
     align-items: center;
+    justify-content: center;
+}
+
+.Assets img{
+    align-self: center;
+    justify-self: center;
 }
 
 /* Responsive Design */
